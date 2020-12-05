@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../../angular.min.js"></script>
+    <script src="ngIncludeDirectiveinAngularJS_2.js"></script>
+    <link href="ngIncludeDirectiveAngularJS.css" rel="stylesheet" />
+</head>
+<body ng-app="myModule">
+<div ng-controller="myController">
+    Select View :
+    <select ng-model="employeeView">
+        <option value="page_1.html">Table</option>
+        <option value="page_2.html">List</option>
+    </select>
+    <br /><br />
+    <div ng-include="employeeView">
+    </div>
+</div>
+</body>
+</html>
